@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Contact Us</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/5d1e1a86f1.js" crossorigin="anonymous"></script>  
+    <link rel="stylesheet" href="Styles.css">
+  </head>
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-dark bg-dark">
+    <div class="container">
+      <span style="color:tomato">
+        <i class="fa-solid fa-burger fa-4x"></i>
+      </span>
+      <a class="navbar-brand" href="index.html">My Restaurant</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Menu.html">Menu</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="Contact_Form.html">Contact Us</a>
+          </li>
+         </ul>
+          
+        
+      </div>
+    </div>
+  </nav>
+
+
+  <body>
+
+    <h1 class="my-5 text-center" style="text-decoration: underline;">Contact Us</h1>
+
+  <div class="container my-5">
+    <Form class="text-center" >
+      <label for="name">Name:</label>
+      <input type="text" id="name" placeholder="Name" required style="box-shadow: 2px 2px 7px 1px black;"> <br>
+      
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" placeholder="YourEmail@email.com" required style="box-shadow: 2px 2px 7px 1px black;"><br>
+      
+      <label for="phone">Phone #:</label>
+      <input type="tel" id="phone" placeholder="000-000-0000" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required style="box-shadow: 2px 2px 7px 1px black;"><br>
+      
+          <label for="order">Order:</label>
+          <div>
+          <textarea name="order" id="order" placeholder="Provide us your order!" style="box-shadow: 2px 2px 7px 1px black;" cols="40" rows="5"></textarea>
+      </div>
+      </Form>
+  <div class="text-center">
+      <button onclick=doSomething() Type="submit" class="btn btn-primary mt-3 mx-5">Submit</button>
+  <p class="my-4" id="Thank_You">Send us your order
+  </p>
+</div>
+  </div>    
+
+   <footer class="py-2 text-center bg-dark" style="color: lightgray;">
+      <span style="color:tomato">
+        <i class="fa-solid fa-burger fa-xl"></i>
+      </span>
+       Created by Adam Negron
+       <span style="color:tomato">
+        <i class="fa-solid fa-burger fa-xl"></i>
+      </span>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <script>
+      function doSomething(){
+          document.getElementById("Thank_You").innerHTML = "Thank You for your order!"
+      }
+  </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
